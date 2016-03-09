@@ -16,8 +16,8 @@ h1 {
 
 .rounded_img{
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: 125px;
   border-color: rgb(204, 204, 204);
   border-right-width: 2.66667px;
 }
