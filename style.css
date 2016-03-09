@@ -84,6 +84,7 @@ p {
   margin: 0 auto;
   width: 500px;
   text-align: center;
+  border: none;
 }
 
 .card{
