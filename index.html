@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>My Profile</title>
+  <title>Basic info</title>
 
   <!-- Google fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
@@ -13,97 +13,119 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="container">
-    <div class="card">
-      <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/000/1e6/3fc/14ed965.jpg" alt="Picture Kevin" class="rounded_img">
-      <h1>Kevin Ambrogi</h1>
-      <h2>Ruby Developer Wannabe @ Le Wagon</h2>
-      <p>Jazz musician turned into marketing and IT. <br> After 8 years as a non-technical project manager I decided to become <strong>a full stack Ruby-on-Rails developer.</strong></p>
-      <a href="http://lewagon.com" target="_blank" class="btn-red">See for yourself</a>
-    </div>
-
-    <div class="card">
-      <ul class="list-inline">
-        <li>
-          <a href="https://www.facebook.com/kevin.ambrogi" target="_blank">
-            <i class="fa fa-facebook" id="social"></i>
-            <br> Facebook
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/kevin-ambrogi-74766610" target="_blank">
-            <i class="fa fa-linkedin" id="social"></i>
-            <br> Linkedin
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/kevinambrogi" target="_blank">
-            <i class="fa fa-twitter" id="social"></i>
-            <br> Twitter
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2>My Favorite Movies</h2>
-      <table>
-        <tbody>
-          <tr>
-           <td>
-            <img src="image/25.jpg" alt="25th hour" class="movies_img">
-          </td>
-          <td>
-            <h3>25th Hour</h3>
-            <p>Cornered by the DEA, convicted New York drug dealer Montgomery Brogan reevaluates his life in the 24 remaining hours before facing a seven-year jail term.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-          <img src="image/saints.jpg" class="movies_img">
-          </td>
-          <td>
-            <h3>A Guide To Recognizing Your Saints</h3>
-            <p>A coming-of-age drama about a boy growing up in Astoria, N.Y., during the 1980s. As his friends end up dead, on drugs or in prison, he comes to believe he has been saved from their fate by so-called saints.</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="image/chef.jpg" class="movies_img">
-          </td>
-          <td>
-            <h3>Chef</h3>
-            <p>A chef who loses his restaurant job starts up a food truck in an effort to reclaim his creative promise, while piecing back together his estranged family.</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <div id="sidebar">
+    <ul>
+      <li>
+        <a href="#summary">
+          <i class="fa fa-info-circle"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#favorite-movies">
+          <i class="fa fa-file-video-o"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#footer">
+          <i class="fa fa-life-ring"></i>
+        </a>
+      </li>
+    </ul>
   </div>
+  <div id="page-content">
+    <!-- your page content here -->
+    <div class="container">
+      <div class="card" id="summary">
+        <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/000/1e6/3fc/14ed965.jpg" alt="Picture Kevin" class="rounded_img">
+        <h1>Kevin Ambrogi</h1>
+        <h2>Ruby Developer Wannabe @ Le Wagon</h2>
+        <p>Jazz musician turned into marketing and IT. <br> After 8 years as a non-technical project manager I decided to become <strong>a full stack Ruby-on-Rails developer.</strong></p>
+        <a href="http://lewagon.com" target="_blank" class="btn-red">See for yourself</a>
+      </div>
 
-  <div class="card">
-    <h2>About this page</h2>
-    <p>This page has been coded during the <a href="http://lewagon.org/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
+      <div class="card">
+        <ul class="list-inline">
+          <li>
+            <a href="https://www.facebook.com/kevin.ambrogi" target="_blank">
+              <i class="fa fa-facebook" id="social"></i>
+              <br> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kevin-ambrogi-74766610" target="_blank">
+              <i class="fa fa-linkedin" id="social"></i>
+              <br> Linkedin
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/kevinambrogi" target="_blank">
+              <i class="fa fa-twitter" id="social"></i>
+              <br> Twitter
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <ul class="list-inline">
-     <li>
-       <a href="#">
-         <i class="fa fa-heart" id="social"></i>
-       </a>
-     </li>
-     <li>
-       <a href="#">
-         <i class="fa fa-share" id="social"></i>
-       </a>
-     </li>
-     <li>
-       <a href="#">
-         <i class="fa fa-star" id="social"></i>
-       </a>
-     </li>
-   </ul>
+      <div class="card" id="favorite-movies">
+        <h2>My Favorite Movies</h2>
+        <table>
+          <tbody>
+            <tr>
+             <td>
+              <img src="image/25.jpg" alt="25th hour" class="movies_img">
+            </td>
+            <td>
+              <h3>25th Hour</h3>
+              <p>Cornered by the DEA, convicted New York drug dealer Montgomery Brogan reevaluates his life in the 24 remaining hours before facing a seven-year jail term.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="image/saints.jpg" class="movies_img">
+            </td>
+            <td>
+              <h3>A Guide To Recognizing Your Saints</h3>
+              <p>A coming-of-age drama about a boy growing up in Astoria, N.Y., during the 1980s. As his friends end up dead, on drugs or in prison, he comes to believe he has been saved from their fate by so-called saints.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="image/chef.jpg" class="movies_img">
+            </td>
+            <td>
+              <h3>Chef</h3>
+              <p>A chef who loses his restaurant job starts up a food truck in an effort to reclaim his creative promise, while piecing back together his estranged family.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" id="footer">
+      <h2>About this page</h2>
+      <p>This page has been coded during the <a href="http://lewagon.org/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
+
+      <ul class="list-inline">
+       <li>
+         <a href="#">
+           <i class="fa fa-heart" id="social"></i>
+         </a>
+       </li>
+       <li>
+         <a href="#">
+           <i class="fa fa-share" id="social"></i>
+         </a>
+       </li>
+       <li>
+         <a href="#">
+           <i class="fa fa-star" id="social"></i>
+         </a>
+       </li>
+     </ul>
+   </div>
  </div>
-</div>
 
+
+</div>
 </body>
 </html>
